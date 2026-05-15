@@ -4,7 +4,7 @@ from bottle import abort, redirect, request, response, route, run, template
 CLIENT_ID = ""  # Your Spotify Client ID
 CLIENT_SECRET = ""  # Your Spotify Client Secret
 SCOPE = "user-library-read user-library-modify playlist-read-private playlist-modify-private playlist-modify-public"
-REDIRECT_URI = "http://localhost:8080/callback"
+REDIRECT_URI = "https://playlist-deleter.onrender.com/callback"
 BASE_URL = "https://api.spotify.com/v1"
 
 RESPONSE_ITEMS_LIMIT = 50  # Number of items to fetch per request. MIN: 0, MAX: 50
@@ -189,4 +189,4 @@ def delete():
 
 
 if __name__ == "__main__":
-    run(host="localhost", port=8080, debug=True, reloader=True)
+    run(host="playlist-deleter.onrender.com", debug=True, reloader=True)
