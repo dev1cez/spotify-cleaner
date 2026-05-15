@@ -10,6 +10,7 @@ package-mode = false
 python = "^3.08"
 bottle = "^0.12.25"
 requests = "^2.32.3"
+legacy-cgi = "2.6.4"
 
 
 [build-system]
